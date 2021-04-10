@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    -->
+    <title>Lin Earrings</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class= "container">
+        <!--NAVIGATION BAR-->
+        <div class= "nav-wrapper">
+            <div class="left-side">
+                <div class= "nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>   
+
+                <div class= "nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div> 
+
+                <div class= "nav-link-wrapper">
+                    <a href="purchase.html">Purchase</a>
+                </div>    
+            </div>
+
+            <div class = "right-side">
+                <div class = "brand">
+                    <div>LIN EARRINGS</div>
+                </div> 
+            </div>       
+        </div>
+        <!--CONTENTS INSIDE-->
+    <br>
+    <br>
+        
+        <div class= "content-wrapper"> <!--everything below nav bar-->
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(./pictures/C7A91F8F-C317-43FE-8AD6-DC1B5B2C2F5A-0EB390D7-3234-482C-A15B-CE43218C5B87.jpeg)">
+                    </div>
+
+                    <div class = "img-text-wrapper">   
+                        <div class = "subtitle">
+                            Strawberry Fields
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(./pictures/17837C24-F2CE-4AA3-9E33-EDA64E7B0081-111B2B43-9DD7-4F12-86D0-FE3E682241B1.jpeg">
+                    </div>
+                    
+                    <div class = "img-text-wrapper">
+                        <div class = "subtitle">
+                            Purple Fruity Queens
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(./pictures/2CD88000-62C8-4B34-899A-DDE2B201343E-7DDF1A7E-404D-4963-BDCC-18D96CEE8971.jpeg">
+                    </div>
+                    <div class = "img-text-wrapper">
+                        <div class = "subtitle">
+                            Sassy Strawberry Cowgirls
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(./pictures/5C732176-B128-4427-8C0F-EB36E5D68746-E4EC52C3-7D64-44AC-B847-368849FF89C5.jpeg">
+                    </div>
+                    <div class = "img-text-wrapper">
+                        <div class = "subtitle">
+                            Blueberry Cowgirl Gals
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(./pictures/7369CF5A-0774-4A18-AF36-95CC15DCBFFD-E8E1B408-1148-4D6E-9BF4-56E47820D1F0.jpeg">
+                    </div>
+                    <div class = "img-text-wrapper">
+                        <div class = "subtitle">
+                            Blueberry Sisters w/Cowprint
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(./pictures/82E55CFA-C1AB-4C93-9E3A-0CDDBE2BCA67-B84630C9-6D50-4A2A-8994-621AB19084C6.jpeg">
+                    </div>
+                    <div class = "img-text-wrapper">
+                        <div class = "subtitle">
+                            Sassy Strawberry Cowgirl
+                        </div>
+                    </div>
+                </div> 
+
+            </div> 
+        </div>      
+        
+    <br>    
+
+</body>
+<!--JAVASCRIPT CODE GOES HERE-->
+<script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+        portfolioItems.forEach(portfolioItem => { 
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })    
+        })
+</script>
+
+</html>

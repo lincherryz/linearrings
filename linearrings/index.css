@@ -1,0 +1,93 @@
+/* Master Styles */
+body{ 
+    margin: 0px; 
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* Nav Styles */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side{
+    display: flex;   /*puts things side by side */
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: pink;
+    text-decoration: none; /*removes line under text*/
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover { /*checks for a hover to occur */
+    border-bottom: 1px solid orange; 
+}
+.nav-link-wrapper a:hover {
+    color: orange;
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+.portfolio-img-background{
+    height: 350px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+/* image text in its original state */
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 800;
+    color: transparent;
+    
+}
+/* what happens to image text when you hover */
+.img-text-wrapper:hover .subtitle{
+    font-weight: 800;
+    color: pink;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* Header Styles */
+h1 {
+    color: pink;
+}

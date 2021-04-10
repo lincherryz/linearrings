@@ -1,0 +1,46 @@
+/* Master Styles */
+body{ 
+    margin: 0px; 
+}
+.container{
+    margin: 45px;
+}
+
+/* Nav Styles */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    
+}
+
+.left-side{
+    display: flex;   /*puts things side by side */
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: pink;
+    text-decoration: none; /*removes line under text*/
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover { /*checks for a hover to occur */
+    border-bottom: 1px solid orange; 
+}
+.nav-link-wrapper a:hover {
+    color: orange;
+}
+
+h1 {
+    color: pink;
+}
