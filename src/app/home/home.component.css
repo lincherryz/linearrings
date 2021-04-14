@@ -1,4 +1,4 @@
-/* Master Styles */
+/* Home Master Styles */
 body{ 
     margin: 0px; 
 }
@@ -7,7 +7,7 @@ body{
     grid-template-columns: 1fr;
 }
 
-/* Portfolio Styles */
+/* Home Portfolio Styles */
 
 .portfolio-items-wrapper{
     display: grid;
