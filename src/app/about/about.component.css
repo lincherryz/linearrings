@@ -5,3 +5,10 @@ body{
 .container{
     margin: 45px;
 }
+/* Header Styles */
+h1 {
+    color: pink;
+}
+h2 {
+    color: pink;
+}
