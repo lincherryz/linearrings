@@ -1,38 +1,67 @@
 /* Master Styles */
-body{ 
+* { 
     margin: 0px; 
+    box-sizing: border-box;
 }
+/* Header Styles */
+h1 {
+    margin: 10px;
+    color: #f88379;
+}
+/* Column Styles */
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 430px;
+    border-radius: 25px;
+    
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 900px) {
+    .column {
+      width: 100%;   
+    }
+  }
+.column p1, p2{
+    font-size: 1em;
+}  
 .container{
-    margin: 45px;
+    margin: 40px;
+    font-family: Sans-serif;
 }
-
+.column img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 /* Nav Styles */
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 38px;
-    
+    padding: 38px; 
 }
-
 .left-side{
     display: flex;   /*puts things side by side */
 }
-
 .nav-wrapper > .left-side > div{
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
 }
-
 .brand{
-    color: pink;
+    color:black;
 }
 .nav-link-wrapper{
     height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
-
 .nav-link-wrapper a {
     color: pink;
     text-decoration: none; /*removes line under text*/
@@ -44,7 +73,32 @@ body{
 .nav-link-wrapper a:hover {
     color: orange;
 }
-
-h1 {
-    color: pink;
+/* Table Styles */
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
+    background-color: #f88379;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid orange;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #ffefd5;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #f88379;
 }

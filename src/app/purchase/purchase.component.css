@@ -1,7 +1,42 @@
 /* Purchase Master Styles */
-body{ 
+*{ 
     margin: 0px; 
+    box-sizing: border-box;
 }
+/* Header Styles */
+h1 {
+    margin: 10px;
+    color: #f88379;
+}
+/* Column Styles */
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 430px;
+    border-radius: 25px;
+    
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 900px) {
+    .column {
+      width: 100%;   
+    }
+  }
+.column p1, p2{
+    font-size: 1em;
+}  
 .container{
-    margin: 45px;
+    margin: 40px;
+    font-family: Sans-serif;
+}
+.column img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
