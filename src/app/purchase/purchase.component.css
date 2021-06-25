@@ -1,5 +1,5 @@
-/* Purchase Master Styles */
-*{ 
+/* Master Styles */
+* { 
     margin: 0px; 
     box-sizing: border-box;
 }
@@ -7,6 +7,8 @@
 h1 {
     margin: 10px;
     color: #f88379;
+    font-size: 40px;
+    font-weight: bold;
 }
 /* Column Styles */
 .column{
@@ -28,7 +30,7 @@ h1 {
       width: 100%;   
     }
   }
-.column p1, p2{
+.column p{
     font-size: 1em;
 }  
 .container{
@@ -39,4 +41,33 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+/* Table Styles */
+.content-table{
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr {
+    background-color: #f88379;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 10px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid orange;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #ffefd5;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #f88379;
 }
