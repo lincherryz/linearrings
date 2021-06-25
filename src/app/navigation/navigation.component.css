@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 .left-side{

@@ -1,0 +1,1 @@
+//table which includes earrings 
