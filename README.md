@@ -1,8 +1,14 @@
-# Snackattack
+# Linearrings
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
 ![front_page icon](https://github.com/lincherryz/linearrings/blob/master/main-page.png)
+
+![about_page icon](https://github.com/lincherryz/linearrings/blob/master/about-me-page.png)
+
+This project is mobile and desktop accessible.
+
+![purchase_page icon](https://github.com/lincherryz/linearrings/blob/master/mobile-purchase-page.png)
 
 ## Development server
 
